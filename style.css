@@ -1,0 +1,55 @@
+body{
+    width: 1300px;
+    background-color: #BB9457;
+}
+
+form p{
+    color: #E3E36A;
+    font-weight: bold;
+}
+
+.register,
+.login form{
+    padding:10px;
+    margin:50px;
+    width: 450px;
+    background-color:#C16200; 
+}
+
+label{
+    margin:5px;
+    color: #E3E36A;
+    font-weight: bold;
+    width:100px;
+}
+
+input[type='text'],
+input[type='email']
+{
+    width:180px;
+    margin:5px;
+    background-color: white;
+    border:1px solid #6F1D1B;
+    border-radius:10px;
+}
+
+
+.choix{
+    position: sticky;
+    margin-top: 10px;
+    margin-left: 1100px;
+    width:50px;
+    height:50px;
+}
+
+.choix form{
+    width:100px;
+}
+
+/* #ModifMail{
+    visibility: hidden;
+} */
+
+/* #ModifName form{
+    visibility: hidden;
+} */
