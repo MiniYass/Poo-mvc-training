@@ -12,8 +12,8 @@
             $password = strip_tags($value['password']);
 
             if (isset($email)) {
-                $result = trim($email); // retire tout les espace/vide
-                 if (!preg_match("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/", $result)) { // regex vie <3
+                $result = trim($email); // retire tout les espace vides
+                 if (!preg_match("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/", $result)) { 
                     $email='email erroné';
                 }else{
                     $email = $result;
@@ -31,7 +31,7 @@
 
             if (isset($password)) {
                 $result = trim($password);
-                 if (!preg_match("/^[a-zA-Z0-9 éèçà-]*$/", $result)) { // pas voulu mettre regex compliqué pour le moment identique a la verif username                                 
+                 if (!preg_match("/^[a-zA-Z0-9 éèçà-]*$/", $result)) {                                 
                     echo "Mauvais MDP";
                 }else{
                     $password = $result;
@@ -56,7 +56,6 @@
             $table->bindParam(3, $password);
 
             $table->execute();
-            // ici cela enregistre bien les information dans la BDD
         }
     
         public function connectUser($val){
